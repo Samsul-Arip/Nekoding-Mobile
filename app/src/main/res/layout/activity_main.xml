@@ -23,6 +23,8 @@
         app:itemIconTint="@drawable/select"
         app:itemTextColor="@drawable/select"
         android:clickable="false"
+        app:itemTextAppearanceInactive="@style/poppins"
+        app:itemTextAppearanceActive="@style/poppins"
         />
 
 </RelativeLayout>

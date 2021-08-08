@@ -4,6 +4,7 @@
     <item
         android:state_selected="true"
         android:color="@color/colorPing"
+        android:fontFamily="@font/poppins_medium"
         />
 
     <item
