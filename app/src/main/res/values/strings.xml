@@ -2,4 +2,13 @@
     <string name="app_name">Nekoding-Mobile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Samsul Aripin</string>
+    <string name="welcome">Welcome back</string>
+    <string name="text_start">Start learning toward your dream</string>
+    <string name="get_start">Get Start</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="see_all">See All</string>
+    <string name="nama_course">Flutter Developer: Provider State Management</string>
+    <string name="harga">IDR.350.000</string>
+    <string name="best_seller">Best Seller</string>
 </resources>

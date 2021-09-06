@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="223dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    android:layout_height="243dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        >
+        <ImageView
+            android:id="@+id/imageItemSatu"
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:src="@drawable/slide_satu"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tvCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:layout_below="@id/imageItemSatu"
+            android:text="@string/nama_course"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/linearSatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/tvCourse"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+            <ImageView
+                android:id="@+id/personCourse"
+                android:layout_width="9dp"
+                android:layout_height="11dp"
+                android:src="@drawable/ic_person_name_course"
+                />
+
+            <TextView
+                android:id="@+id/tvNameCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="6dp"
+                android:text="@string/username"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/linearSatu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="12sp"
+                android:text="@string/harga"
+                android:textColor="@color/black"
+                />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="22dp"
+                android:background="@drawable/ic_best_seller"
+                android:layout_alignParentEnd="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:text="@string/best_seller"
+                    android:textColor="@color/red"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
