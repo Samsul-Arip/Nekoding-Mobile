@@ -12,4 +12,6 @@
     <string name="harga">IDR.350.000</string>
     <string name="best_seller">Best Seller</string>
     <string name="categories">Categories</string>
+    <string name="intro">Intro</string>
+    <string name="detail_intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,</string>
 </resources>

@@ -1,12 +1,14 @@
 package com.example.nekoding_mobile
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.viewpager.widget.PagerAdapter
+import com.example.nekoding_mobile.ui.DetailCourseActivity
 
 
 class SlideAdapter (val context: Context, val slideItems : ArrayList<SliderItems>) : PagerAdapter() {
@@ -29,7 +31,8 @@ class SlideAdapter (val context: Context, val slideItems : ArrayList<SliderItems
         img.setImageResource(image)
 
         view.setOnClickListener {
-            Toast.makeText(context, "Hanya View", Toast.LENGTH_SHORT).show()
+            val intent = Intent(context, DetailCourseActivity::class.java)
+            context.startActivity(intent)
         }
 
         container.addView(view, position)
