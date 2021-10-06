@@ -49,6 +49,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadCard()
+        loadCard2()
 
         binding.viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
@@ -71,6 +72,26 @@ class HomeFragment : Fragment() {
 
     }
 
+    private fun loadCard2() {
+        myDataList = ArrayList()
+        myDataList.add(SliderItems(R.drawable.slide_dua))
+        myDataList.add(SliderItems(R.drawable.slide_satu))
+        myDataList.add(SliderItems(R.drawable.slide_dua))
+        myDataList.add(SliderItems(R.drawable.slide_satu))
+
+        slideAdapter = SlideAdapter(requireContext(), myDataList)
+
+        binding.viewPager2.adapter = slideAdapter
+        binding.apply {
+            viewPager2.setPadding(30,0,274,74)
+            viewPager2.clipToPadding = false
+            viewPager2.pageMargin = 25
+        }
+
+        startAutoSlide(slideAdapter.count)
+
+    }
+
     private fun loadCard() {
         myDataList = ArrayList()
         myDataList.add(SliderItems(R.drawable.slide_satu))
@@ -82,7 +103,7 @@ class HomeFragment : Fragment() {
 
         binding.viewPager.adapter = slideAdapter
         binding.apply {
-            viewPager.setPadding(25,0,200,10)
+            viewPager.setPadding(30,0,200,10)
             viewPager.clipToPadding = false
             viewPager.pageMargin = 25
         }
