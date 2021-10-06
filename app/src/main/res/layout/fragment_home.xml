@@ -62,6 +62,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_baseline_notifications_none_24"
+                android:layout_toStartOf="@id/tvUsername"
                 />
         </RelativeLayout>
 
@@ -78,14 +79,15 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/ic_background_tengah"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp"
                     >
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/ic_background_tengah"
                         android:scaleType="centerCrop"
-                        />
+                        android:src="@drawable/ic_background_center" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -94,7 +96,6 @@
                         android:layout_centerVertical="true"
                         android:layout_marginRight="25dp"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="10dp"
                         android:src="@drawable/image" />
                 </RelativeLayout>
 

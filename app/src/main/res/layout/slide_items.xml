@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="223dp"
+    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="3dp"
     android:layout_height="243dp"
@@ -12,13 +12,13 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="3dp"
         >
+
         <ImageView
             android:id="@+id/imageItemSatu"
             android:layout_width="match_parent"
             android:layout_height="131dp"
-            android:src="@drawable/slide_satu"
             android:scaleType="centerCrop"
-            />
+            android:src="@drawable/slide_satu" />
         <TextView
             android:id="@+id/tvCourse"
             android:layout_width="wrap_content"
